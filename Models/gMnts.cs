@@ -13,11 +13,15 @@ namespace gLibrary.Models
         public const int QRCodeHeight = 300;
 
         //Images
-        public const string ImageFolder = "~/Images/";
-        public const string DishFolder = "/Dishes/";
         public const string gMenuFolder = "gMenu/";
+        public const string ImageFolder = "~/Images/";
+        public const string DefaultFolder = "Default/";
+        //public const string RestaurantFolder = "/Restaurants/";
+        //public const string RestaurantDefault = "gMenuRestaurant.jpg";
+        public const string DishFolder = "/Dishes/";
         public const string LogoFolder = "/Logo/";
         public const string LogoDefault = "gMenu.png";
+        public const string DishDefault = "gMenuDish.jpg";
         public const string ThumbFolder = "Thumbnails/";
 
         //gMnt contants
@@ -40,6 +44,7 @@ namespace gLibrary.Models
         public const string DishCategoryId = "CategoryId";
         public const string DishImage = "Image";
         public const string DishPrice = "Price";
+        public const int DefaultDishCategory = 9999;
 
         //Select list
         public const int NoSelection = 0;

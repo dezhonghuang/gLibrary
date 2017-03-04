@@ -12,13 +12,8 @@ namespace gLibrary.Models
 {
     public class Restaurant
     {
-        public Restaurant()
-        {
-            Logo = gMnts.LogoDefault;
-        }
-
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.None)]
+        //[DatabaseGenerated(DatabaseGeneratedOption.None)]
         [Range(0, int.MaxValue, ErrorMessage="Please enter a number bigger than 0")]
         [DisplayFormat(DataFormatString="{0:00000}")]
         public int Id { get; set; }
@@ -26,15 +21,6 @@ namespace gLibrary.Models
         [ForeignKey("Address")]
         public int? AddressId { get; set; }
         public string Phone { get; set; }
-        public string Logo { get; set; }
-        public string LogoFolder { get { return String.Format(gMnts.RestaurantFolder + Id.ToString() + gMnts.LogoFolder); } }
-
-        public void UploadLogo(HttpPostedFileBase file, string logoPath)
-        {
-            this.Logo = Path.GetFileName(file.FileName);
-            Directory.CreateDirectory(logoPath);
-            file.SaveAs(logoPath + this.Logo);
-        }
 
         public virtual ICollection<Dish> Dishes { get; set; }
         public virtual ICollection<Category> Categories { get; set; }

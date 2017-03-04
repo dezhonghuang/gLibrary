@@ -22,9 +22,6 @@ C:\Users\win7\Documents\Visual Studio 2012\Projects\gLibrary\obj\Debug\gLibrary.
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\gLibrary.dll.config
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\gLibrary.dll
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\gLibrary.pdb
-C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\obj\Debug\gLibrary.csprojResolveAssemblyReference.cache
-C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\obj\Debug\gLibrary.dll
-C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\obj\Debug\gLibrary.pdb
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\EntityFramework.dll
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\Microsoft.Web.Infrastructure.dll
@@ -42,3 +39,6 @@ C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\System
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\System.Web.WebPages.xml
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\System.Web.WebPages.Deployment.xml
 C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\obj\Debug\gLibrary.dll
+C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\obj\Debug\gLibrary.pdb
+C:\Users\Jupiter\Documents\Visual Studio 2012\Projects\gLibrary\obj\Debug\gLibrary.csprojResolveAssemblyReference.cache

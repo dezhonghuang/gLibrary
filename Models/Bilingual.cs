@@ -6,23 +6,18 @@ using System.ComponentModel.DataAnnotations;
 
 namespace gLibrary.Models
 {
-    public class Bilingual
+    public abstract class Bilingual
     {
+        [Required]
         public string Name { get; set; }
-        [Display(Name="Alien Name")]
+        [Display(Name="Name in Other Language")]
         public string AlienName { get; set; }
-        public string OutputFormat { get; set; }
 
         public string FullName
         {
             get
             {
-                if ((OutputFormat == String.Empty) || (OutputFormat == null))
-                {
-                    OutputFormat = "{0, 50} {1, 12}";
-                }
-
-                return String.Format(OutputFormat, Name, AlienName);
+                return this.AlienName.Length > 0 ? this.Name + " " + this.AlienName : this.Name;
             }
         }
     }

@@ -21,8 +21,9 @@ namespace gLibrary.Models
         [Key]
         [Display(Name="Table")]
         public int Id { get; set; }
-        [Display(Name="Number")]
+        [Display(Name="Table No.")]
         public string TableNumber { get; set; }
+        [Range(1, int.MaxValue, ErrorMessage = "Please enter an appropaiate seats number!")]
         public int Seats { get; set; }
         [Display(Name="Restaurant")]
         public int RestaurantId { get; set; }

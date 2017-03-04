@@ -12,17 +12,42 @@ using System.Drawing.Imaging;
 
 namespace gLibrary.Models
 {
+    public enum MenuType
+    {
+        SingleTextual, BilingualTextual, SingleGraphical, BilingualGraphical
+    }
+
     public class Dish
     {
+        public Dish() {
+            CategoryId = gMnts.DefaultDishCategory;
+        }
+
         [Key]
         public int Id { get; set; }
         public Bilingual Bilingual { get; set; }
         public string Introduction { get; set; }
-        [Display(Name = "Category")]
+        [Display(Name = "Picture")]
         public string DishImage { get; set; }
         public string ImageFolder { get { return String.Format(gMnts.RestaurantFolder + RestaurantId.ToString() + gMnts.DishFolder); } }
         public string ThumbFolder { get { return String.Format(gMnts.RestaurantFolder + RestaurantId.ToString() + gMnts.DishFolder + gMnts.ThumbFolder); } }
 
+        public string PartialPage
+        {
+            get { 
+                bool i, l;
+
+                i = this.DishImage.Length > 0;
+                l = this.Bilingual.AlienName.Length > 0;
+
+                string pType = Convert.ToInt32(l).ToString() + Convert.ToInt32(i).ToString();
+
+                MenuType pageValue = (MenuType)Convert.ToInt32(pType, 2);
+
+                return (pageValue.ToString());
+            }
+        }
+            
         public void UploadImage(HttpPostedFileBase file, string imagePath)
         {
             this.DishImage = Path.GetFileName(file.FileName);
